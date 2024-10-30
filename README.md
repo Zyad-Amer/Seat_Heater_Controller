@@ -1,8 +1,8 @@
-# Seat Heater Controller
+# 🚗 Seat Heater Controller with FreeRTOS
 
 This project implements a Seat Heater Controller using FreeRTOS to efficiently manage seat heating levels based on user input and current temperature readings. The controller monitors the temperature, adjusts the heating intensity accordingly, handles potential sensor failures, and provides real-time feedback via UART.
 
-## Features
+## 🌟 Features
 
 - **Multi-tasking**: Utilizes FreeRTOS to handle multiple tasks for reading temperature, controlling the heater, and displaying status updates.
 - **Heating Levels**: Supports multiple heating levels (low, medium, high, no heating) based on user button presses.
@@ -20,4 +20,13 @@ The project consists of several key tasks, each responsible for specific functio
 4. **FailureHandlingTask**: Manages temperature out-of-range scenarios and activates failure indicators.
 5. **DisplayScreenTask**: Sends the current temperature, heater state, and required heating level to the UART for display.
 6. **RunTimeMeasurementsTask**: Collects and reports execution time for each task and overall CPU load.
+## 🗂️ Directory Structure
 
+```plaintext
+/SeatHeaterController
+|-- Task.c                # Main task implementations
+|-- FreeRTOSConfig.h      # Configuration settings for FreeRTOS
+|-- main.c                # Main entry point for the application
+|-- uart.c                # UART communication functions
+|-- adc.c                 # Functions for reading ADC values
+|-- gpio.c                # GPIO handling functions

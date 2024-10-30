@@ -21,17 +21,3 @@ The project consists of several key tasks, each responsible for specific functio
 5. **DisplayScreenTask**: Sends the current temperature, heater state, and required heating level to the UART for display.
 6. **RunTimeMeasurementsTask**: Collects and reports execution time for each task and overall CPU load.
 
-## Getting Started
-
-### Prerequisites
-
-- FreeRTOS
-- A suitable microcontroller with UART and ADC capabilities
-- Development environment for C programming
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd seat-heater-controller
